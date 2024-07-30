@@ -9,6 +9,8 @@ import UserService from './components/service/UserService';
 import UpdateUser from './components/userspage/UpdateUser';
 import UserManagementPage from './components/userspage/UserManagementPage';
 import ProfilePage from './components/userspage/ProfilePage';
+import IndexPage from './components/userspage/IndexPage';
+import IndexPage2 from './components/userspage/IndexPage2';
 
 
 
@@ -21,7 +23,13 @@ function App() {
         <Navbar />
         <div className="content">
           <Routes>
-            <Route exact path="/" element={<LoginPage />} />
+
+             {/* Primera ruta para la página de inicio */}
+             <Route exact path="/" element={<IndexPage />} />
+            <Route exact path="/index" element={<IndexPage />} />
+            <Route exact path="/index2" element={<IndexPage2 />} />
+
+            {/* Rutas restantes */}
             <Route exact path="/login" element={<LoginPage />} />
             <Route path="/profile" element={<ProfilePage />} />
 

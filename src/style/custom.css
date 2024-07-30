@@ -1,0 +1,29 @@
+.background-image {
+    background-image: url('/../frontend/src/style/images/foto3.jpg');
+    /* Ruta relativa desde la carpeta public */
+    background-size: cover;
+    /* Ajusta la imagen para que cubra todo el contenedor */
+    background-position: center;
+    /* Centra la imagen */
+    background-repeat: no-repeat;
+    /* Evita que la imagen se repita */
+    min-height: 100vh;
+    /* Asegúrate de que el contenedor tenga al menos la altura de la pantalla */
+    display: flex;
+    flex-direction: column;
+}
+
+/* ICONOS GITHUB */
+.github-icon {
+    font-size: 24px;
+    color: white;
+    margin-left: 10px;
+    transition: color 0.3s;
+}
+
+.github-icon:hover {
+    color: white;
+    /* Mantén el color blanco incluso en el hover */
+}
+
+/* ICONOS GITHUB  */
