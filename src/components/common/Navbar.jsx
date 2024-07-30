@@ -18,7 +18,7 @@ function Navbar() {
             UserService.logout();
 
             // Forzar recarga de la página
-            window.location.reload();
+            window.location.reload('/profile');
         }
     };
 

@@ -31,7 +31,7 @@ function App() {
 
             {/* Rutas restantes */}
             <Route exact path="/login" element={<LoginPage />} />
-            <Route path="/profile" element={<ProfilePage />} />
+            <Route exact path="/profile" element={<ProfilePage />} />
 
             {/* Check if user is authenticated and admin before rendering admin-only routes*/}
             {UserService.adminOnly() && (

@@ -18,8 +18,9 @@ const handleSubmit = async (e) => {
         if (userData.token) {
             localStorage.setItem('token', userData.token)
             localStorage.setItem('role', userData.role)
-            window.location.reload();
-            navigate('/admin/user-management')
+            navigate('/profile')  //modificado envia a profile luego y despues reinicia  
+            window.location.reload(); // aqui reinicia la ventana
+            
         }else{
             setError(userData.message)
         }
