@@ -25,7 +25,7 @@ function UpdateUser() {
       const { name, email, role, city } = response.ourUsers;
       setUserData({ name, email, role, city });
     } catch (error) {
-      console.error('Error fetching user data:', error);
+      console.error('Error al recuperar los datos del usuario:', error);
     }
   };
 
@@ -42,7 +42,7 @@ function UpdateUser() {
     e.preventDefault();
     try {
       // Confirmar la acción de actualización
-      const confirmUpdate = window.confirm('Are you sure you want to update this user?');
+      const confirmUpdate = window.confirm('¿Está seguro de que desea actualizar este usuario?');
       if (confirmUpdate) {
         const token = localStorage.getItem('token');
         const res = await UserService.updateUser(userId, userData, token);
@@ -51,8 +51,8 @@ function UpdateUser() {
         navigate("/admin/user-management");
       }
     } catch (error) {
-      console.error('Error updating user profile:', error);
-      alert('Error updating user profile');
+      console.error('Error al actualizar el perfil de usuario:', error);
+      alert('Error al actualizar el perfil de usuario');
     }
   };
 
@@ -61,7 +61,7 @@ function UpdateUser() {
       <h2>Actualiza tu perfil</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
-          <label>Name:</label>
+          <label>Nombre:</label>
           <input type="text" name="name" value={userData.name} onChange={handleInputChange} />
         </div>
         <div className="form-group">
@@ -73,10 +73,10 @@ function UpdateUser() {
           <input type="text" name="role" value={userData.role} onChange={handleInputChange} />
         </div>
         <div className="form-group">
-          <label>City:</label>
+          <label>Ciudad:</label>
           <input type="text" name="city" value={userData.city} onChange={handleInputChange} />
         </div>
-        <button type="submit">Update</button>
+        <button type="submit">Actualizar</button>
       </form>
     </div>
   );

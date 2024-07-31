@@ -19,7 +19,7 @@ function UserManagementPage() {
       //   console.log(response);
       setUsers(response.ourUsersList); // Assuming the list of users is under the key 'ourUsersList'
     } catch (error) {
-      console.error('Error fetching users:', error);
+      console.error('Error al recuperar usuarios:', error);
     }
   };
 
@@ -27,7 +27,7 @@ function UserManagementPage() {
   const deleteUser = async (userId) => {
     try {
       // Prompt for confirmation before deleting the user
-      const confirmDelete = window.confirm('Are you sure you want to delete this user?');
+      const confirmDelete = window.confirm('¿Estás seguro de que deseas eliminar este usuario?');
 
       const token = localStorage.getItem('token'); // Retrieve the token from localStorage
       if (confirmDelete) {
@@ -36,22 +36,22 @@ function UserManagementPage() {
         fetchUsers();
       }
     } catch (error) {
-      console.error('Error deleting user:', error);
+      console.error('Error al eliminar usuario:', error);
     }
   };
 
   return (
     <div className="background-image">
       <div className="user-management-container">
-        <h2>Users Management Page</h2>
-        <button className='reg-button'> <Link to="/register">Add User</Link></button>
+        <h2>Administrador de Usuarios</h2>
+        <button className='reg-button'> <Link to="/register">Agregar usuario nuevo</Link></button>
         <table>
           <thead>
             <tr>
               <th>ID</th>
-              <th>Name</th>
+              <th>Nombre</th>
               <th>Email</th>
-              <th>Actions</th>
+              <th>Acciones</th>
             </tr>
           </thead>
           <tbody>
@@ -61,11 +61,8 @@ function UserManagementPage() {
                 <td>{user.name}</td>
                 <td>{user.email}</td>
                 <td>
-                  <button className='delete-button' onClick={() => deleteUser(user.id)}>Delete</button>
-                  <button><Link to={`/update-user/${user.id}`}>
-                    Update
-                  </Link>
-                  </button>
+                  <button className='delete-button' onClick={() => deleteUser(user.id)}>Eliminar</button>
+                  <button><Link to={`/update-user/${user.id}`}>Actualizar</Link></button>
                 </td>
               </tr>
             ))}

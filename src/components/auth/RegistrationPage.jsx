@@ -45,10 +45,10 @@ function RegistrationPage() {
 
     return (
         <div className="auth-container">
-            <h2>Registration</h2>
+            <h2>Registrate</h2>
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
-                    <label>Name:</label>
+                    <label>Nombre:</label>
                     <input type="text" name="name" value={formData.name} onChange={handleInputChange} required />
                 </div>
                 <div className="form-group">
@@ -64,10 +64,10 @@ function RegistrationPage() {
                     <input type="text" name="role" value={formData.role} onChange={handleInputChange} placeholder="Enter your role" required />
                 </div>
                 <div className="form-group">
-                    <label>City:</label>
+                    <label>Ciudad:</label>
                     <input type="text" name="city" value={formData.city} onChange={handleInputChange} placeholder="Enter your city" required />
                 </div>
-                <button type="submit">Register</button>
+                <button type="submit">Registrar</button>
             </form>
         </div>
     );
