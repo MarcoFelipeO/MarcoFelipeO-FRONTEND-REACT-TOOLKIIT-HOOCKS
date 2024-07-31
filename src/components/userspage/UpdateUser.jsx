@@ -58,7 +58,7 @@ function UpdateUser() {
 
   return (
     <div className="auth-container">
-      <h2>Update User</h2>
+      <h2>Actualiza tu perfil</h2>
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label>Name:</label>
