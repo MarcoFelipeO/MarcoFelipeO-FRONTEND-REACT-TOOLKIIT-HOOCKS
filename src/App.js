@@ -23,9 +23,9 @@ function App() {
         <Navbar />
         <div className="content">
           <Routes>
-
-             {/* Primera ruta para la página de inicio */}
-             <Route exact path="/" element={<IndexPage />} />
+          
+            {/* Primera ruta para la página de inicio */}
+            <Route exact path="/" element={<IndexPage />} />
             <Route exact path="/index" element={<IndexPage />} />
             <Route exact path="/index2" element={<IndexPage2 />} />
 
