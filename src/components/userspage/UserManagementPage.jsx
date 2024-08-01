@@ -44,8 +44,8 @@ function UserManagementPage() {
     <div className="background-image">
       <div className="user-management-container">
         <h2>Administrador de Usuarios</h2>
-        <button className='reg-button'> <Link to="/register">Agregar usuario nuevo</Link></button>
-        <table>
+        <button className='reg-button'> <Link to="/register">Agregar usuario</Link></button>
+        <table >
           <thead>
             <tr>
               <th>ID</th>
