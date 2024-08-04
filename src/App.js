@@ -33,7 +33,7 @@ function App() {
             <Route exact path="/login" element={<LoginPage />} />
             <Route exact path="/profile" element={<ProfilePage />} />
 
-            {/* Check if user is authenticated and admin before rendering admin-only routes*/}
+            {/* Verifique si el usuario está autenticado y es administrador antes de representar rutas solo para administradores */}
             {UserService.adminOnly() && (
               <>
                 <Route path="/register" element={<RegistrationPage />} />
