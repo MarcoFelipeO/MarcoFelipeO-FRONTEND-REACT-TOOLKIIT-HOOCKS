@@ -44,31 +44,33 @@ function RegistrationPage() {
     };
 
     return (
-        <div className="auth-container">
-            <h2>Registrate</h2>
-            <form onSubmit={handleSubmit}>
-                <div className="form-group">
-                    <label>Nombre:</label>
-                    <input type="text" name="name" value={formData.name} onChange={handleInputChange} required />
-                </div>
-                <div className="form-group">
-                    <label>Email:</label>
-                    <input type="email" name="email" value={formData.email} onChange={handleInputChange} required />
-                </div>
-                <div className="form-group">
-                    <label>Password:</label>
-                    <input type="password" name="password" value={formData.password} onChange={handleInputChange} required />
-                </div>
-                <div className="form-group">
-                    <label>Role:</label>
-                    <input type="text" name="role" value={formData.role} onChange={handleInputChange} placeholder="Enter your role" required />
-                </div>
-                <div className="form-group">
-                    <label>Ciudad:</label>
-                    <input type="text" name="city" value={formData.city} onChange={handleInputChange} placeholder="Enter your city" required />
-                </div>
-                <button type="submit">Registrar</button>
-            </form>
+        <div className="background-image">
+            <div className="auth-container">
+                <h2>Registrate</h2>
+                <form onSubmit={handleSubmit}>
+                    <div className="form-group">
+                        <label>Nombre:</label>
+                        <input type="text" name="name" value={formData.name} onChange={handleInputChange} required />
+                    </div>
+                    <div className="form-group">
+                        <label>Email:</label>
+                        <input type="email" name="email" value={formData.email} onChange={handleInputChange} required />
+                    </div>
+                    <div className="form-group">
+                        <label>Password:</label>
+                        <input type="password" name="password" value={formData.password} onChange={handleInputChange} required />
+                    </div>
+                    <div className="form-group">
+                        <label>Role:</label>
+                        <input type="text" name="role" value={formData.role} onChange={handleInputChange} placeholder="Enter your role" required />
+                    </div>
+                    <div className="form-group">
+                        <label>Ciudad:</label>
+                        <input type="text" name="city" value={formData.city} onChange={handleInputChange} placeholder="Enter your city" required />
+                    </div>
+                    <button type="submit">Registrar</button>
+                </form>
+            </div>
         </div>
     );
 }
