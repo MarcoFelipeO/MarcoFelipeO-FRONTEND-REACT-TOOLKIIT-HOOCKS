@@ -57,7 +57,7 @@ function RegistrationPage() {
                         <input type="email" name="email" value={formData.email} onChange={handleInputChange} required />
                     </div>
                     <div className="form-group">
-                        <label>Password:</label>
+                        <label>Contraseña:</label>
                         <input type="password" name="password" value={formData.password} onChange={handleInputChange} required />
                     </div>
                     <div className="form-group">
