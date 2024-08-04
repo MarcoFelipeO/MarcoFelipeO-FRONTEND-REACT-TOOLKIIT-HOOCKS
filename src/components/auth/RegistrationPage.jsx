@@ -62,11 +62,11 @@ function RegistrationPage() {
                     </div>
                     <div className="form-group">
                         <label>Role:</label>
-                        <input type="text" name="role" value={formData.role} onChange={handleInputChange} placeholder="Enter your role" required />
+                        <input type="text" name="role" value={formData.role} onChange={handleInputChange} placeholder="Ingresa el Rol" required />
                     </div>
                     <div className="form-group">
                         <label>Ciudad:</label>
-                        <input type="text" name="city" value={formData.city} onChange={handleInputChange} placeholder="Enter your city" required />
+                        <input type="text" name="city" value={formData.city} onChange={handleInputChange} placeholder="Ingresa tu Ciudad" required />
                     </div>
                     <button type="submit">Registrar</button>
                 </form>
