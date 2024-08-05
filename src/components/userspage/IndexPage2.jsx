@@ -16,25 +16,8 @@ const PaginaNumeroDos = () => {
                 </div>
             </div>
 
-            <div className="container mt-5">
-                <div className="row">
-                    <div className="col">
-                        <h1 className='text-white'>Bienvenido a la Nueva Página</h1>
-                        <p className='text-white'>Esta es una plantilla básica para una nueva página en React.</p>
-                        <Link to="/" className="btn btn-danger">Volver a la Página Principal haz click aqui</Link>
-                    </div>
-                </div>
-            </div>
+           
 
-            <div className="container mt-5">
-                <div className="row">
-                    <div className="col">
-                        <h1 className='text-white'>Bienvenido a la Nueva Página</h1>
-                        <p className='text-white'>Esta es una plantilla básica para una nueva página en React.</p>
-                        <Link to="/" className="btn btn-danger">Volver a la Página Principal haz click aqui</Link>
-                    </div>
-                </div>
-            </div>
             
         </div>
     );
